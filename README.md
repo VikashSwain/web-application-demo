@@ -50,4 +50,12 @@ STEP 5: Setting Up Monitoring with Prometheus and Grafana
 
         below I have attached image of the project.
 
+        ![demo-web-app](https://github.com/user-attachments/assets/72bd8ec6-6f13-4a8d-a557-ac3869711ac3)
+
+        ![Grafana-dashboard](https://github.com/user-attachments/assets/52bd5df9-bd20-48ad-91d6-00dc505f6c23)
+
+        ![cluster](https://github.com/user-attachments/assets/11d5d706-2f0e-4b0b-be86-0be7d20eb3a9)
+
+        ![pods-k8s](https://github.com/user-attachments/assets/e5d89b8a-4215-411f-b857-690c207e0874)
+
         
