@@ -23,21 +23,26 @@ STEP 1  : Infrastructure Provisioning with Terraform
           with the terraform code [VPC, subnet, internetgateway, Route table, EKS cluster, 1 Nodegroup] was created
           
 STEP 2 : Initialize and Apply Terraform
+
          terraform init
          terraform validate
          terraform plan
          terraform apply
 
 STEP 3: Create Dockerfile ,Image and Run container
+
         Docker build -t swainvikash/nginx12 .
+        
         then run the container to test , after successful run image was pushed to docker hub registry
         [docker push swainvikash/nginx12]
 
 STEP 4: Create Kubernetes Deployment Files
         Created deployment yml file for swainvikash/nginx12 image with 2 replicas.
         created service with type Loadbalancer expose on port 80.
+        
         kubectl apply -f kubernetes/deployment.yml
         kubectl apply -f kubernetes/service.yml
+        
 STEP 5: Setting Up Monitoring with Prometheus and Grafana
         Use Helm to install Prometheus and Grafana in the monitoring namespace
         Validate the application by accessing the LoadBalancer URL of the web application service.
